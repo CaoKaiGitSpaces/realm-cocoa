@@ -863,6 +863,7 @@ RLMProperty *RLMValidatedGetProperty(__unsafe_unretained RLMObjectBase *const ob
     return prop;
 }
 
+
 id RLMDynamicGet(__unsafe_unretained RLMObjectBase *obj, __unsafe_unretained RLMProperty *prop) {
     NSUInteger col = prop.column;
     switch (accessorCodeForType(prop.objcType, prop.type)) {
